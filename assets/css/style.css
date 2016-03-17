@@ -1,0 +1,363 @@
+.contained-img {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.covered-img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@font-face {
+  src: url("../font/Arvo-Bold.ttf");
+  font-family: "Arvo";
+}
+@font-face {
+  src: url("../font/NewsCycle-Regular.ttf");
+  font-family: "NewsCycle";
+}
+@font-face {
+  src: url("../font/SixCaps.ttf");
+  font-family: "SixCaps";
+}
+@font-face {
+  src: url("../font/ostrich-bold.ttf");
+  font-family: "Ostrich";
+}
+@font-face {
+  src: url("../font/CicleGordita.ttf");
+  font-family: "Cicle";
+}
+@font-face {
+  src: url("../font/Bebas.ttf");
+  font-family: "Bebas";
+}
+.header-font {
+  font-family: "Arvo";
+}
+.faded-white {
+  color: white;
+  opacity: 0.6;
+}
+body {
+  font-size: 18px;
+  font-family: "NewsCycle";
+  color: #002f2f;
+  opacity: 0.975;
+}
+.full {
+  left: 0;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/back2.jpg");
+  background-size: cover;
+  z-index: -1;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Arvo";
+}
+.section {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  margin-top: 5px;
+  box-shadow: inset 0 0 30px rgba(255, 255, 255, 0.15);
+}
+.web-section ul {
+  list-style: none;
+  padding-left: 0px;
+}
+.web-section ul li {
+  display: inline-block;
+}
+.web-section ul span {
+  padding: 5px;
+}
+h1 {
+  color: white;
+  opacity: 0.6;
+  border-bottom: 3px solid white;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+h1 {
+  font-size: 100px;
+}
+h2 {
+  font-size: 60px;
+}
+h3 {
+  font-size: 35px;
+}
+h4 {
+  font-size: 20px;
+}
+a {
+  font-weight: bolder;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+a.button {
+  display: block;
+  background: rgba(0, 47, 47, 0.7);
+  color: white;
+  padding: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 100;
+}
+a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+#what-i-do {
+  text-align: center;
+  color: white;
+  opacity: 0.6;
+  font-family: "Arvo";
+  font-size: 20px;
+}
+#what-i-do span {
+  padding: 10px;
+}
+#where {
+  margin-top: 10px;
+  text-align: center;
+  color: white;
+  opacity: 0.6;
+}
+.diagram-wrapper {
+  text-align: center;
+}
+#diagram {
+  margin-top: 30px;
+  display: inline-block;
+  width: 670px;
+  height: 400px;
+}
+#diagram .section-wrapper {
+  position: absolute;
+  border: 5px solid #002f2f;
+  border-radius: 20px;
+  padding: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+#diagram .diagram-arrow {
+  position: absolute;
+  left: 100%;
+  top: 48px;
+  width: 110px;
+  height: 5px;
+  background: #002f2f;
+}
+#diagram .diagram-arrow:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 100%;
+  margin-top: -16px;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #002f2f;
+}
+#diagram #code-wrapper {
+  margin-top: 90px;
+  width: 110px;
+  height: 110px;
+}
+#diagram #code-wrapper span {
+  display: block;
+  font-size: 16px;
+}
+#diagram #publication-wrapper {
+  margin-left: 190px;
+  width: 240px;
+  font-size: 20px;
+}
+#diagram #publication-wrapper .publication {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: 40px;
+  height: 62px;
+  box-shadow: 0 0 0 1px #002f2f;
+}
+#diagram #publication-wrapper .publication:before,
+#diagram #publication-wrapper .publication:after {
+  content: "";
+  display: block;
+  margin-left: 5px;
+  margin-top: 8px;
+  left: 10px;
+  border-top: 1px solid #002f2f;
+  border-bottom: 1px solid #002f2f;
+  top: 0;
+  width: 30px;
+  height: 8px;
+}
+#diagram #publication-wrapper .publication:after {
+  margin-top: 8px;
+}
+#diagram #publication-wrapper .publication:before {
+  margin-top: 20px;
+}
+#diagram #ipad-wrapper {
+  width: 150px;
+  height: 220px;
+  border: 16px solid #002f2f;
+  border-top: 25px solid #002f2f;
+  border-bottom: 25px solid #002f2f;
+  margin-top: 60px;
+  margin-left: 520px;
+  font-size: 22px;
+}
+#diagram #ipad-wrapper:before,
+#diagram #ipad-wrapper:after {
+  position: absolute;
+  content: "";
+  border-radius: 100%;
+  left: 50%;
+}
+#diagram #ipad-wrapper:before {
+  background: white;
+  width: 6px;
+  height: 6px;
+  top: -16px;
+  margin-left: -3px;
+  opacity: 0.2;
+}
+#diagram #ipad-wrapper:after {
+  opacity: 0.5;
+  background: #002f2f;
+  border: 2px solid white;
+  width: 13px;
+  height: 13px;
+  bottom: -19px;
+  margin-left: -7px;
+}
+#diagram #ipad-wrapper .diagram-arrow {
+  left: -111px;
+  top: 80px;
+  width: 76px;
+}
+.client {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80px;
+}
+#bentley {
+  background-image: url("../img/clients/bentley.png");
+}
+#gq {
+  background-image: url("../img/clients/gq.png");
+}
+#seiko {
+  background-image: url("../img/clients/seiko.png");
+}
+#wired {
+  background-image: url("../img/clients/wired.png");
+}
+#woolmark {
+  background-image: url("../img/clients/woolmark.png");
+}
+#dma {
+  background-image: url("../img/clients/gq.png");
+}
+#shell {
+  background-image: url("../img/clients/seiko.png");
+}
+#esquire {
+  background-image: url("../img/clients/wired.png");
+}
+#graff {
+  background-image: url("../img/clients/woolmark.png");
+}
+#topgear {
+  background-image: url("../img/clients/wired.png");
+}
+#dwell {
+  background-image: url("../img/clients/woolmark.png");
+}
+.screenshot {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 324px;
+}
+.cell-img {
+  background-image: url("../img/screenshots/cell1.png");
+}
+.novadrive-img {
+  background-image: url("../img/screenshots/novadrive1.png");
+}
+.alchemy-img {
+  background-image: url("../img/screenshots/alchemy1.png");
+}
+.game,
+.website {
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+.game .row:first-child,
+.website .row:first-child {
+  margin-bottom: 20px;
+}
+.game h3,
+.website h3,
+.game h4,
+.website h4,
+.game span,
+.website span {
+  width: auto;
+  display: inline;
+}
+.game span,
+.website span {
+  font-size: 21px;
+  margin-left: 5px;
+}
+.website .screenshot {
+  height: 200px;
+}
+.contacts .contact {
+  background-color: #002f2f;
+  border-radius: 100%;
+  opacity: 0.8;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.contacts .contact.email {
+  background-image: url("../img/contact/email.png");
+}
+.contacts .contact.github {
+  background-image: url("../img/contact/github.png");
+  background-size: 70px;
+}
+.contacts .contact.linkedin {
+  background-image: url("../img/contact/linkedin.png");
+}
+.contacts .contact.instagram {
+  background-image: url("../img/contact/instagram.png");
+  background-size: 60px;
+}
+.contacts .contact.carbonmade {
+  background-image: url("../img/contact/carbonmade1.png");
+}

@@ -1,0 +1,420 @@
+.square( @size ){
+    width: @size;
+    height: @size;
+}
+
+.contained-img{
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.covered-img{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@green: #002F2F;
+
+@font-face{
+    src: url("../font/Arvo-Bold.ttf");
+    font-family: "Arvo";
+}
+
+@font-face{
+    src: url("../font/NewsCycle-Regular.ttf");
+    font-family: "NewsCycle";
+}
+
+
+@font-face{
+    src: url("../font/SixCaps.ttf");
+    font-family: "SixCaps";
+}
+
+@font-face{
+    src: url("../font/ostrich-bold.ttf");
+    font-family: "Ostrich";
+}
+
+@font-face{
+    src: url("../font/CicleGordita.ttf");
+    font-family: "Cicle";
+}
+
+@font-face{
+    src: url("../font/Bebas.ttf");
+    font-family: "Bebas";
+}
+
+.header-font{
+    font-family: "Arvo";
+}
+
+.faded-white{
+    color: white;
+    opacity: 0.6;
+}
+
+body{
+    font-size: 18px;
+    font-family: "NewsCycle";
+    color: @green;
+    opacity: 0.975;
+}
+
+
+.full{
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/back2.jpg");
+    background-size: cover;
+    z-index: -1;
+}
+
+h1,h2,h3,h4,h5,h6{
+    .header-font;
+}
+
+.section{
+    background: fadeout(white,90%);
+    padding: 10px;
+    // margin-bottom: 10px;
+    margin-top: 5px;
+    // border-bottom: 1px solid white;
+    // border-top: 1px solid white;
+    box-shadow: inset 0 0 30px rgba(255,255,255,0.15);
+}
+
+.web-section{
+    ul{
+        list-style: none;
+        padding-left: 0px;
+
+        li{
+            display: inline-block;
+        }
+        span{
+            padding: 5px;
+        }
+    }
+}
+
+h1{
+    .faded-white;
+    border-bottom: 3px solid white;
+    text-shadow: 0 0 20px rgba(255,255,255,0.3);
+}
+
+h2{
+    // border-bottom: 1px solid @green;
+}
+
+h1{ font-size: 100px; }
+h2{ font-size: 60px; }
+h3{ font-size: 35px; }
+h4{ font-size: 20px; }
+
+
+a{
+    font-weight: bolder;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+
+    &.button{
+        display: block;
+        background: fadeout(@green,30);
+        color: white;
+        padding: 5px;
+        margin-bottom: 5px;
+        text-align: center;
+        border-radius: 20px;
+        cursor: pointer;
+        font-weight: 100;
+    }
+
+    &:hover{
+        cursor: pointer;
+        text-decoration: none;
+    }
+}
+
+#what-i-do{
+    text-align: center;
+    .faded-white;
+    .header-font;
+    font-size: 20px;
+
+    span{
+        padding: 10px;
+    }
+
+    // .divide{
+    //     display: inline-block;
+    //     float: center;
+    //     .square(8px);
+    //     border-radius: 100%;
+    //     background: @green;
+    //     line-height: 0px;
+    // }
+}
+
+.col-md-10{
+    // background: fadeout(white,90%);
+}
+
+.header-section{
+
+    // padding: 20px;
+}
+
+#where{
+    margin-top: 10px;
+    text-align: center;
+    .faded-white;
+}
+
+.section-divide{
+    // margin-top: 60px;
+    // margin-bottom: 10px;
+    // border-bottom: 3px solid @green;
+    // opacity: 0.6;
+}
+
+
+.diagram-wrapper{
+    text-align: center;
+}
+
+#diagram{
+    margin-top: 30px;
+    display: inline-block;
+    width: 670px;
+    height: 400px;
+
+
+    .section-wrapper{
+        position: absolute;
+        border: 5px solid @green;
+        border-radius: 20px;
+        padding: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .diagram-arrow{
+        position: absolute;
+        left: 100%;
+        top: 48px;
+        width: 110px;
+        height: 5px;
+        background: @green;
+
+        &:after{
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            left: 100%;
+            margin-top: -16px;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+            border-left:20px solid @green;
+        }
+
+
+    }
+
+    #code-wrapper{
+        margin-top: 90px;
+        .square( 110px );
+
+        span{
+            display: block;
+            font-size: 16px;
+        }
+    }
+
+    #publication-wrapper{
+        margin-left: 190px;
+        width: 240px;
+        font-size: 20px;
+
+        .publication{
+            margin: 0;
+            padding: 0;
+            display:inline-block;
+            width: 40px;
+            height: 62px;
+            box-shadow: 0 0 0 1px @green;
+
+            &:before, &:after{
+                content:"";
+                display: block;
+                margin-left: 5px;
+                margin-top:8px;
+                left: 10px;
+                border-top: 1px solid @green;
+                border-bottom: 1px solid @green;
+                top: 0;
+                width: 30px;
+                height: 8px;
+            }
+
+            &:after{
+                margin-top:8px;
+            }
+
+            &:before{
+                margin-top: 20px;
+            }
+        }
+
+    }
+
+    #ipad-wrapper{
+        width: 150px;
+        height: 220px;
+        border: 16px solid @green;
+        border-top: 25px solid @green;
+        border-bottom: 25px solid @green;
+        margin-top: 60px;
+        margin-left: 520px;
+        font-size: 22px;
+
+        &:before, &:after{
+            position: absolute;
+            content:"";
+            border-radius: 100%;
+            left: 50%;
+        }
+
+        &:before{
+            background: white;
+            width:  6px;
+            height: 6px;
+            top: -16px;
+            margin-left: -3px;
+            opacity: 0.2;
+        }
+
+        &:after{
+            opacity: 0.5;
+            background: @green;
+            border: 2px solid white;
+            width: 13px;
+            height: 13px;
+            bottom: -19px;
+            margin-left: -7px;
+        }
+
+        .diagram-arrow{
+          left:-111px;
+          top: 80px;
+          width: 76px;
+        }
+
+    }
+
+
+}
+
+
+
+.client{
+    .contained-img;
+    height: 80px;
+}
+
+#bentley{ background-image: url("../img/clients/bentley.png"); }
+#gq{ background-image: url("../img/clients/gq.png"); }
+#seiko{ background-image: url("../img/clients/seiko.png"); }
+#wired{ background-image: url("../img/clients/wired.png"); }
+#woolmark{ background-image: url("../img/clients/woolmark.png"); }
+#dma{ background-image: url("../img/clients/gq.png"); }
+#shell{ background-image: url("../img/clients/seiko.png"); }
+#esquire{ background-image: url("../img/clients/wired.png"); }
+#graff{ background-image: url("../img/clients/woolmark.png"); }
+#topgear{ background-image: url("../img/clients/wired.png"); }
+#dwell{ background-image: url("../img/clients/woolmark.png"); }
+
+
+
+.screenshot{
+    .covered-img;
+    width: 100%;
+    height: 324px;
+}
+
+.cell-img{ background-image: url("../img/screenshots/cell1.png"); }
+.novadrive-img{ background-image: url("../img/screenshots/novadrive1.png"); }
+.alchemy-img{ background-image: url("../img/screenshots/alchemy1.png"); }
+
+
+.game, .website{
+
+    .row:first-child{
+        margin-bottom: 20px;
+    }
+
+
+    margin-top: 50px;
+    margin-bottom: 70px;
+
+    h3,h4,span{
+        width: auto;
+        display:inline;
+    }
+    span{
+        font-size: 21px;
+        margin-left: 5px;
+    }
+}
+
+.website{
+    .screenshot{
+        height: 200px;
+    }
+}
+
+.contacts{
+
+    .contact{
+
+        background-color: @green;
+        border-radius: 100%;
+        opacity: 0.8;
+        .contained-img;
+        .square(100px);
+        display: inline-block;
+        margin-right: 10px;
+        cursor: pointer;
+
+        &.email{      background-image: url("../img/contact/email.png"); }
+        &.github{     background-image: url("../img/contact/github.png"); background-size: 70px;}
+        &.linkedin{   background-image: url("../img/contact/linkedin.png"); }
+        &.instagram{  background-image: url("../img/contact/instagram.png"); background-size: 60px; }
+        &.carbonmade{ background-image: url("../img/contact/carbonmade1.png"); }
+    }
+}
+
+
+//
+//
+//
+//
+// .publication:nth-child(9):after, .publication:nth-child(5):after, .publication:nth-child(12):after, .publication:nth-child(16):after{
+//   border: 1px solid @blue;
+//   width: 27px;
+//   height: 52px;
+//   background: @blue;
+//   border-radius: 5px;
+// }
+// .publication:nth-child(9):before, .publication:nth-child(5):before, .publication:nth-child(12):before, .publication:nth-child(16):before{
+//   display: none
+// }
