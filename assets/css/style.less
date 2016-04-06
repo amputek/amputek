@@ -58,7 +58,7 @@
 }
 
 body{
-    font-size: 18px;
+    font-size: 16px;
     font-family: "NewsCycle";
     color: @green;
     opacity: 0.975;
@@ -358,13 +358,44 @@ a{
 
 .game, .website{
 
+    background-size: cover;
+    padding: 0px;
+    // padding-top: 5px;
+    color: white;
+    background-color: #333;
+    background-position: center;
+
+    .game-title{
+        // background: red;
+    }
+
+    .game-inner{
+        padding: 20px;
+        background: -webkit-linear-gradient(left, rgba(0,0,0,0.7) 30%,rgba(0,0,0,0.0) 50%);
+    }
+
+    &#cell{
+        background-image: url("../img/screenshots/cell1.png");
+    }
+
+    &#alchemy-man{
+        background-image: url("../img/screenshots/alchemy1.png");
+    }
+
+    &#novadrive{
+        background-image: url("../img/screenshots/novadrive1.png");
+    }
+
     .row:first-child{
         margin-bottom: 20px;
     }
 
 
-    margin-top: 50px;
-    margin-bottom: 70px;
+    .screenshot{
+        display: none;
+    }
+
+    margin-bottom: 10px;
 
     h3,h4,span{
         width: auto;
@@ -373,6 +404,13 @@ a{
     span{
         font-size: 21px;
         margin-left: 5px;
+    }
+
+    .button-wrapper{
+        margin-top: 20px;
+        .button{
+            background:@green;
+        }
     }
 }
 

@@ -40,7 +40,7 @@
   opacity: 0.6;
 }
 body {
-  font-size: 18px;
+  font-size: 16px;
   font-family: "NewsCycle";
   color: #002f2f;
   opacity: 0.975;
@@ -307,12 +307,37 @@ a:hover {
 }
 .game,
 .website {
-  margin-top: 50px;
-  margin-bottom: 70px;
+  background-size: cover;
+  padding: 0px;
+  color: white;
+  background-color: #333;
+  background-position: center;
+  margin-bottom: 10px;
+}
+.game .game-inner,
+.website .game-inner {
+  padding: 20px;
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0) 50%);
+}
+.game#cell,
+.website#cell {
+  background-image: url("../img/screenshots/cell1.png");
+}
+.game#alchemy-man,
+.website#alchemy-man {
+  background-image: url("../img/screenshots/alchemy1.png");
+}
+.game#novadrive,
+.website#novadrive {
+  background-image: url("../img/screenshots/novadrive1.png");
 }
 .game .row:first-child,
 .website .row:first-child {
   margin-bottom: 20px;
+}
+.game .screenshot,
+.website .screenshot {
+  display: none;
 }
 .game h3,
 .website h3,
@@ -327,6 +352,14 @@ a:hover {
 .website span {
   font-size: 21px;
   margin-left: 5px;
+}
+.game .button-wrapper,
+.website .button-wrapper {
+  margin-top: 20px;
+}
+.game .button-wrapper .button,
+.website .button-wrapper .button {
+  background: #002f2f;
 }
 .website .screenshot {
   height: 200px;
