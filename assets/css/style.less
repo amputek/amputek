@@ -53,8 +53,8 @@
 }
 
 .faded-white{
-    color: white;
-    opacity: 0.6;
+//    color: white;
+//    opacity: 0.;
 }
 
 body{
@@ -106,7 +106,7 @@ h1,h2,h3,h4,h5,h6{
 
 h1{
     .faded-white;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid @green;
     text-shadow: 0 0 20px rgba(255,255,255,0.3);
 }
 
@@ -148,20 +148,12 @@ a{
     text-align: center;
     .faded-white;
     .header-font;
-    font-size: 20px;
+    font-size: 14px;
 
     span{
-        padding: 10px;
+        padding: 20px;
     }
 
-    // .divide{
-    //     display: inline-block;
-    //     float: center;
-    //     .square(8px);
-    //     border-radius: 100%;
-    //     background: @green;
-    //     line-height: 0px;
-    // }
 }
 
 .col-md-10{
@@ -375,7 +367,7 @@ a{
     }
 
     &#cell{
-        background-image: url("../img/screenshots/cell1.png");
+        background-image: url("../img/screenshots/cell7.png");
     }
 
     &#alchemy-man{
@@ -384,6 +376,18 @@ a{
 
     &#novadrive{
         background-image: url("../img/screenshots/novadrive1.png");
+    }
+
+    &#efps{
+        background-image: url("../img/screenshots/efps.png");
+    }
+
+    &#rain{
+        background-image: url("../img/screenshots/rain2.png");
+    }
+
+    &#breakout{
+        background-image: url("../img/screenshots/breakout.png");
     }
 
     .row:first-child{
@@ -441,18 +445,25 @@ a{
     }
 }
 
+@media screen and (max-width: 767px) {
 
-//
-//
-//
-//
-// .publication:nth-child(9):after, .publication:nth-child(5):after, .publication:nth-child(12):after, .publication:nth-child(16):after{
-//   border: 1px solid @blue;
-//   width: 27px;
-//   height: 52px;
-//   background: @blue;
-//   border-radius: 5px;
-// }
-// .publication:nth-child(9):before, .publication:nth-child(5):before, .publication:nth-child(12):before, .publication:nth-child(16):before{
-//   display: none
-// }
+    h1{ font-size: 40px; }
+
+    #what-i-do
+    {
+        span{ display: block; padding: 0px;}
+        .divide{ display: none;}
+    }
+
+    .game-title span{
+        display: block;
+    }
+
+.game, .website{
+
+    .game-inner{
+        padding: 20px;
+        background: -webkit-linear-gradient(left, rgba(0,0,0,1.0) 0%,rgba(0,0,0,0.3) 100%);
+    }
+}
+}
