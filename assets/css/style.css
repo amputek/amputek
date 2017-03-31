@@ -99,7 +99,7 @@ a {
 }
 a.button {
   display: block;
-  background: rgba(0, 47, 47, 0.7);
+  background: rgba(0, 0, 0, 0.2);
   color: white;
   padding: 5px;
   margin-bottom: 5px;
@@ -361,7 +361,8 @@ a:hover {
 }
 .game .button-wrapper .button,
 .website .button-wrapper .button {
-  background: #002F2F;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3);
 }
 .website .screenshot {
   height: 200px;
