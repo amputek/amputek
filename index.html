@@ -1,242 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>Rob Dawson</title>
 
-        <!-- Bootstrap -->
-        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-        <link href="assets/css/style.css" rel="stylesheet">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Rob Dawson</title>
 
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
           <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
-    </head>
-    <body>
 
-        <div class = "full"></div>
 
-        <div class = "container">
-            <div class = "row">
-                <div class = "col-xs-0 col-md-1"></div>
-                <div class = "col-sm-12 col-md-10">
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-41963720-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
 
-                    <div class = "section header-section">
-                        <h1>Rob Dawson</h1>
+<body>
 
-                        <div id = "what-i-do" class = "row">
-                            <span>Web Development</span>
-                            <span  class="divide">/</span>
-                            <span>Game Programming</span>
-                            <span class="divide">/</span>
-                            <span>Digital Publishing</span>
+    <div class="full"></div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-0 col-md-1"></div>
+            <div class="col-sm-12 col-md-10">
+
+                <div class="section header-section">
+                    <h1>Rob Dawson</h1>
+
+                    <div id="what-i-do" class="row">
+                        <span>Web Development</span>
+                        <span class="divide">/</span>
+                        <span>Game Programming</span>
+                        <span class="divide">/</span>
+                        <span>Digital Publishing</span>
+                    </div>
+
+
+                    <div class="row" id="where">
+                        <div class="col-xs-6">From: Brighton, UK</div>
+                        <div class="col-xs-6">Currently: Vancouver, CAN</div>
+                    </div>
+                </div>
+
+
+
+                <div class="section">
+                    <h2>Projects</h2>
+
+
+                    <div class="game" id="cell">
+                        <div class="game-inner">
+                            <div class="row">
+                                <div class="col-xs-12 game-title">
+                                    <h3>CELL</h3>
+                                    <span>Generative Audio-Visual game. C++, Cinder, SuperCollider</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-5">
+                                    <p>CELL is an open-source Audiovisual experience built in C++ with Cinder and the SuperCollider audio programming language. Cell is procedural, meaning that no two playthroughs will be the same. It's soundtrack is entirely
+                                        generative.
+                                    </p>
+                                    <p>System Requirements: OSX 10.8+</p>
+                                    <div class="button-wrapper">
+                                        <a class="button" href="https://github.com/amputek/CELL/releases/download/v1.0/cell.app.zip" download>Download CELL for OS X</a>
+                                        <a class="button" href="https://github.com/amputek/CELL/">View Source on Github</a>
+                                        <a class="button" href="https://www.youtube.com/watch?v=afZwhQg1fzE">View on YouTube</a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-7">
+                                    <!-- <div class = "screenshot cell-img"></div> -->
+                                </div>
+                            </div>
                         </div>
+                    </div>
 
-
-                        <div class = "row" id = "where">
-                            <div class = "col-xs-6">From: Brighton, UK</div>
-                            <div class = "col-xs-6">Currently: Vancouver, CAN</div>
+                    <div class="game" id="novadrive">
+                        <div class="game-inner">
+                            <div class="row">
+                                <div class="col-xs-12 game-title">
+                                    <h3>NovaDrive</h3>
+                                    <span>2D space shooter. Unity, UnityScript</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <p>Built in the Unity Game Engine by Mutato Games. UnityScript (Javascript)</p>
+                                    <div class="button-wrapper">
+                                        <a class="button" href="https://www.youtube.com/watch?v=P8w8BsXVbJU">View on YouTube</a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="screenshot novadrive-img"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
 
-
-                    <div class = "section">
-                        <h2>Projects</h2>
-  
-
-                        <div class = "game" id = "cell">
-                            <div class = "game-inner">
-                                <div class = "row">
-                                    <div class = "col-xs-12 game-title">
-                                        <h3>CELL</h3>
-                                        <span>Generative Audio-Visual game. C++, Cinder, SuperCollider</span>
+                    <div class="game" id="efps">
+                        <div class="game-inner">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h3>"E.F.P.S."</h3>
+                                    <span>First Person Shooter concept. Unity, UnityScript</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <p>"E.F.P.S" (Embodied First Person Shooter) is an experimental prototype designed and implemented in Unity, as a new technique for Camera placement and control in First Person Shooters. This prototype made extensive use
+                                        of Inverse Kinematics
+                                    </p>
+                                    <div class="button-wrapper">
+                                        <a class="button" href="https://www.youtube.com/playlist?list=PLAirbJxSXhOtrk6GSLCwUeSs1UOl2iAD_">View on YouTube</a>
                                     </div>
                                 </div>
-                                <div class = "row">
-                                    <div class = "col-sm-5">
-                                        <p>CELL is an open-source Audiovisual experience built in C++ with Cinder and the SuperCollider audio programming language. Cell is procedural, meaning that no two playthroughs will be the same. It's soundtrack is entirely generative.</p>
-                                        <p>System Requirements: OSX 10.8+</p>
-                                        <div class = "button-wrapper">
-                                            <a class = "button" href = "https://github.com/amputek/CELL/releases/download/v1.0/cell.app.zip" download>Download CELL for OS X</a>
-                                            <a class = "button" href = "https://github.com/amputek/CELL/">View Source on Github</a>
-                                            <a class = "button" href = "https://www.youtube.com/watch?v=RUm413HGNHA">View on YouTube</a>
-                                        </div>
-                                    </div>
-                                    <div class = "col-sm-7">
-                                        <!-- <div class = "screenshot cell-img"></div> -->
-                                    </div>
+                                <div class="col-sm-8">
+                                    <div class="screenshot alchemy-img"></div>
                                 </div>
                             </div>
                         </div>
-
-                        <div class = "game" id = "novadrive">
-                            <div class = "game-inner">
-                                <div class = "row">
-                                    <div class = "col-xs-12 game-title">
-                                        <h3>NovaDrive</h3>
-                                        <span>2D space shooter. Unity, UnityScript</span>
-                                    </div>
-                                </div>
-                                <div class = "row">
-                                    <div class = "col-sm-4">
-                                        <p>Built in the Unity Game Engine by Mutato Games. UnityScript (Javascript)</p>
-                                        <div class = "button-wrapper">
-                                            <a class = "button" href = "https://www.youtube.com/watch?v=P8w8BsXVbJU">View on YouTube</a>
-                                        </div>
-                                    </div>
-                                    <div class = "col-sm-8">
-                                        <div class = "screenshot novadrive-img"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class = "game" id="efps">
-                            <div class = "game-inner">
-                                <div class = "row">
-                                    <div class = "col-xs-12">
-                                        <h3>"E.F.P.S."</h3>
-                                        <span>First Person Shooter concept. Unity, UnityScript</span>
-                                    </div>
-                                </div>
-                                <div class = "row">
-                                    <div class = "col-sm-4">
-                                        <p>"E.F.P.S" (Embodied First Person Shooter) was an experimental prototype designed and implemented in Unity, as a new technique for Camera placement in First Person Shooters. This prototype made extensive use of Inverse Kinematics</p>
-                                        <div class = "button-wrapper">
-                                            <a class = "button" href = "https://www.youtube.com/playlist?list=PLAirbJxSXhOtrk6GSLCwUeSs1UOl2iAD_">View on YouTube</a>
-                                        </div>
-                                    </div>
-                                    <div class = "col-sm-8">
-                                        <div class = "screenshot alchemy-img"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class = "game" id = "alchemy-man">
-                            <div class = "game-inner">
-                                <div class = "row">
-                                    <div class = "col-xs-12">
-                                        <h3>"Alchemy Man"</h3>
-                                        <span>2D platformer. Javascript, Box2D, php</span>
-                                    </div>
-                                </div>
-                                <div class = "row">
-                                    <div class = "col-sm-4">
-                                        <p>Built game-engine from scratch using Javascript and the Box2D Game Engine</p>
-                                        <p>This prototype features a web-based Level Editor built with AJAX and PHP, which allowed the Game's artists to collaborate level designs.</p>
-                                        <div class = "button-wrapper">
-                                            <a class = "button" href = "http://amputek.github.io/alchemy-man/">Play Online</a>
-                                            <a class = "button" href = "https://github.com/amputek/alchemy-man">View Source on Github</a>
-                                            <a class = "button" href = "https://www.youtube.com/watch?v=0d6IEhhreOI">View on YouTube</a>
-                                        </div>
-                                    </div>
-                                    <div class = "col-sm-8">
-                                        <div class = "screenshot alchemy-img"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class = "game" id="breakout">
-                            <div class = "game-inner">
-                                <div class = "row">
-                                    <div class = "col-xs-12">
-                                        <h3>Breakout</h3>
-                                        <span>Breakout Clone. Javascript, Cinder, C++</span>
-                                    </div>
-                                </div>
-                                <div class = "row">
-                                    <div class = "col-sm-4">
-                                        <p>Built game-engine from scratch using Javascript and the Box2D Game Engine</p>
-                                        <div class = "button-wrapper">
-                                            <a class = "button" href = "http://amputek.github.io/breakout/">Play Online</a>
-                                            <a class = "button" href = "https://github.com/amputek/breakout">View JS Source on Github</a>
-                                            <a class = "button" href = "https://github.com/amputek/breakout-cinder">View Cinder Source on Github</a>
-                                        </div>
-                                    </div>
-                                    <div class = "col-sm-8">
-                                        <div class = "screenshot alchemy-img"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class = "game">
-                            <div class = "game-inner">
-                                <div class = "row">
-                                    <div class = "col-xs-12">
-                                        <h3>ProcSynth</h3>
-                                        <span>additive/substractive synthesizer in Processing</span>
-                                    </div>
-                                </div>
-                                <div class = "row">
-                                    <div class = "col-sm-4">
-
-                                        <div class = "button-wrapper">
-                                            <a class = "button" href = "https://github.com/amputek/processing-synth">View Source on Github</a>
-                                        </div>
-                                    </div>
-                                    <div class = "col-sm-8">
-                                        <div class = "screenshot alchemy-img"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class = "game" id = "rain">
-                            <div class = "game-inner">
-                                <div class = "row">
-                                    <div class = "col-xs-12">
-                                        <h3>rain.js</h3>
-                                        <span>simulating rain and condensation</span>
-                                    </div>
-                                </div>
-                                <div class = "row">
-                                    <div class = "col-sm-4">
-                                        <div class = "button-wrapper">
-                                            <a class = "button" href = "https://amputek.github.io/rain">Play Online</a>
-                                            <a class = "button" href = "https://github.com/amputek/rain">View Source on Github</a>
-                                        </div>
-                                    </div>
-                                    <div class = "col-sm-8">
-                                        <div class = "screenshot alchemy-img"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
 
-                    <div class = "section-divide"></div>
-
-                    <div class = "section">
-                        <h2>Contact</h2>
-                        <div class = "row">
-                            <div class = "col-xs-12 contacts">
-                                <a class = "contact github" href = "https://github.com/amputek"></a>
-                                <a class = "contact email" href = "mailto:r.dawson.7291@googlemail.com"></a>
-                                <a class = "contact linkedin" href = "https://uk.linkedin.com/pub/rob-dawson/65/a95/40"></a>
-                                <a class = "contact instagram" href = "https://instagram.com/_robdawson/"></a>
-                                <a class = "contact carbonmade" href = "https://generate.carbonmade.com"></a>
+                    <div class="game" id="alchemy-man">
+                        <div class="game-inner">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h3>"Alchemy Man"</h3>
+                                    <span>2D platformer. Javascript, Box2D, php</span>
+                                </div>
                             </div>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <p>A from-scratch game/engine using Javascript and the Box2D Physics Engine</p>
+                                    <p>This prototype features a web-based Level Editor built with AJAX and PHP, which allowed the Game's artists to collaborate level designs.</p>
+                                    <div class="button-wrapper">
+                                        <a class="button" href="http://amputek.github.io/alchemy-man/">Play Online</a>
+                                        <a class="button" href="https://github.com/amputek/alchemy-man">View Source on Github</a>
+                                        <a class="button" href="https://www.youtube.com/watch?v=0d6IEhhreOI">View on YouTube</a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="screenshot alchemy-img"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game" id="breakout">
+                        <div class="game-inner">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h3>Breakout</h3>
+                                    <span>Breakout Clone. Javascript, Cinder, C++</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <p>A from-scratch game using Javascript and the Box2D Physics Engine</p>
+                                    <div class="button-wrapper">
+                                        <a class="button" href="http://amputek.github.io/breakout/">Play Online</a>
+                                        <a class="button" href="https://github.com/amputek/breakout">View JS Source on Github</a>
+                                        <a class="button" href="https://github.com/amputek/breakout-cinder">View Cinder Source on Github</a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="screenshot alchemy-img"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game">
+                        <div class="game-inner">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h3>ProcSynth</h3>
+                                    <span>additive/substractive synthesizer in Processing</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4">
+
+                                    <div class="button-wrapper">
+                                        <a class="button" href="https://github.com/amputek/processing-synth">View Source on Github</a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="screenshot alchemy-img"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game" id="rain">
+                        <div class="game-inner">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h3>rain.js</h3>
+                                    <span>simulating rain and condensation</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="button-wrapper">
+                                        <a class="button" href="https://amputek.github.io/rain">Play Online</a>
+                                        <a class="button" href="https://github.com/amputek/rain">View Source on Github</a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="screenshot alchemy-img"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="section-divide"></div>
+
+                <div class="section">
+                    <h2>Contact</h2>
+                    <div class="row">
+                        <div class="col-xs-12 contacts">
+                            <a class="contact github" href="https://github.com/amputek"></a>
+                            <a class="contact email" href="mailto:r.dawson.7291@googlemail.com"></a>
+                            <a class="contact linkedin" href="https://uk.linkedin.com/pub/rob-dawson/65/a95/40"></a>
+                            <a class="contact instagram" href="https://instagram.com/_robdawson/"></a>
+                            <a class="contact carbonmade" href="https://generate.carbonmade.com"></a>
                         </div>
                     </div>
                 </div>
-                <div class = "col-xs-0 col-md-1"></div>
             </div>
+            <div class="col-xs-0 col-md-1"></div>
         </div>
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="assets/js/bootstrap.min.js"></script>
-    </body>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+
 </html>
